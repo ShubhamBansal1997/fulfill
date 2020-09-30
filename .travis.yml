@@ -10,11 +10,3 @@ jobs:
     script:
     - npm run build
     - npm run test
-deploy:
-  provider: netlify
-  site: competent-jang-991096.netlify.app
-  auth:
-    secure: i6gKkNTrsKSQpja/0WNtq54zZUkbgksXSBnK+IM1jtrGEKBJZ0nVZL4JJauzOfHR3onqVu23LRDiXgo3lIl32L2pdf3KtmNfRSXa8+gQ5sgtXMhgMKDzjHkWLAzAqxoxPJq5XrEgx/1Q2tjNfxVqzFpmSSuBTfSkrnAwCcuts60GqO2fYlrn1WkLHs5C+MHCD7zQl/bYe5Eh6rY4pQiNjYCtytgBRGuac/kXJZng4jbPi9+e2zsUI2hSzOlIJku8r07nZF5VNf6NO26w+hH6JkP+eXoj3rFp55yeFZa60GRKdbvzObC1XEfIOAWGVc0TywrvAO3hkz3XrqiOJiTGmGu8slBEIcMwsi+GIGCWDI0yS2lz/c4UmMQaF25BagRRoLmxmtayPf3PQnMNqInZqYDH6svHf+tEApQBjPrkyDK/NcY2oZ4cDNFVbL9v+VMYlJZdhVo4JQjnoztvPnyvBA+IDBY2t/WJ15sTiA3OyHucAhs/jBembb783r2HZNowH+H/Yz8yOcCKas6p/SDb1xp9GHNA4BRO3NLDpy/9IFTdgOGb/rYPLB8CFNdsaNgi4KnzqxJF3RjTL2lJvbQ9bfg46cLa220gpmkv2Mll21vOHrs0EbPFwUbrRrTeIbm7JFH70ncrQ3S+jFRZlnJ9GnZMoMlYcuF+P/T4bHYDptc=
-  edge: true
-  prod: true
-  dir: build/
