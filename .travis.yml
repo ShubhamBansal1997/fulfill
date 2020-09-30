@@ -1,0 +1,19 @@
+language: node_js
+notifications:
+  email: true
+node_js: 12
+before_script:
+- npm install
+jobs:
+  include:
+  - stage: test
+    script:
+    - npm run build
+    - npm run test
+deploy:
+  provider: netlify
+  site: competent-jang-991096
+  auth: "<encrypted auth>"
+  edge: true
+  api_key:
+    secure: I05yf4NXLfaGr5n45ebkVKLg9TPrueryTcf9m6SfIE1GbPWQRuE2LB2tTSAYi4Ak+0EbQlk60BKOJHG7ixjNDYPyIySHMSGvo5vBJy+ILBTWwMSQmbSr07eYLvXUoqAfg35xaDYrB5xNxFne5QvORjLSYPodn34s+qfQftAYliILhAe6r7n0GekTgN4EnOTWWgt3zb3UjbSX25yHBxHgqPJyYRzNcYcZN5vVP0ON6ibaGBTv1KlvSDYA64aLw3kfXkeO8Ace4+d7uzVm4+k2TAY+XXNmI05nWvtsZ0FkF1SHoFRsvkKkZB+mEaAT0l0h/DrfCZEhvc/ILcpe4NkVjts62cuc+PzrI4W4dCiw2MOkeUkk1G9TMa9Eyg6HPLTWnMH0XwrZRl3qHuCRnTtjY8amVYUTL5gQ3B5F/8sgEwGHXjdayyHv+kERToyvnINR/EoivkqHVAgG4Tks28ETq4N+h1SlxMPTdq8F4wMth/KL2186ycSIubKqmz/qbR+w8FZP1GUQ8PYbe49USMNJP/Xl2TiDs5qd4y4F+CsjJRDWIu9wA+Aojl/4TE+9foVzqILWD0ACLx6AuFIHLcyNVi8pdmUroqq9ZnXkfc/gVTfXjqg6h6ooqIGEVY0ArSFo67SQ5bJi43QPRj61RO5WUKozA7w55GUa+X/GYB+3icU=
