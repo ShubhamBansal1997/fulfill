@@ -25,6 +25,12 @@ export const mainListItems = (
             </ListItemIcon>
             <ListItemText primary="Add Product"/>
         </ListItem>
+        <ListItem button component={Link} to="/webhook">
+            <ListItemIcon>
+                <ShoppingCartIcon/>
+            </ListItemIcon>
+            <ListItemText primary="Web Hooks"/>
+        </ListItem>
     </div>
 );
 

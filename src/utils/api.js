@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const apiBase = 'https://fulfill-web.herokuapp.com/';
-
 const instance = axios.create({
-    baseURL: apiBase,
+    baseURL: process.env.REACT_APP_API_URL,
     timeout: 600000
 });
 
